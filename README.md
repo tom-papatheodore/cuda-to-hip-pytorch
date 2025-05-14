@@ -13,12 +13,13 @@ $ cd cuda-to-hip-pytorch/gpu-mm
 $ python3 -m venv --upgrade-deps venv
 $ source venv/bin/activate
 
-# Install dependencies (custom URLs require separate requirements files for both CUDA and HIP).
+# Install dependencies, including ROCm-enabled PyTorch
+# (custom URLs require separate requirements files for both CUDA and HIP).
 (venv)$ pip install --no-build-isolation -r requirements_pypi.txt
 (venv)$ pip install --no-build-isolation -r requirements_pytorch_rocm.txt
 
-# Install gpu_mm package
-# Here, PyTorch hipifies the matmul.cu file, creating a matmul.hip file.
+# Install gpu_mm package. Here, the ROCm-enabled PyTorch hipifies the matmul.cu file during the build, 
+# which creates a matmul.hip file that sits next to the original matmul.cu.
 (venv)$ pip install -v --no-build-isolation -e .
   ...                                                                                                                                                                                                              Successfully preprocessed all matching files.                                                                                                                                                                    Total number of unsupported CUDA function calls: 0                                                                                                                                                               Total number of replaced kernel launches: 1                                                                                                                                                                      ...                                                                                                                                                                                                              Successfully built gpu_mm
   Installing collected packages: gpu_mm
