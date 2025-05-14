@@ -21,9 +21,14 @@ $ source venv/bin/activate
 # Install gpu_mm package. Here, the ROCm-enabled PyTorch hipifies the matmul.cu file during the build, 
 # which creates a matmul.hip file that sits next to the original matmul.cu.
 (venv)$ pip install -v --no-build-isolation -e .
-  ...                                                                                                                                                                                                              Successfully preprocessed all matching files.                                                                                                                                                                    Total number of unsupported CUDA function calls: 0                                                                                                                                                               Total number of replaced kernel launches: 1                                                                                                                                                                      ...                                                                                                                                                                                                              Successfully built gpu_mm
-  Installing collected packages: gpu_mm
-  Successfully installed gpu_mm-0.0.0
+... 
+Successfully preprocessed all matching files.
+Total number of unsupported CUDA function calls: 0
+Total number of replaced kernel launches: 1
+...
+Successfully built gpu_mm
+Installing collected packages: gpu_mm
+Successfully installed gpu_mm-0.0.0
 ```
 
 ## Testing
