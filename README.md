@@ -141,7 +141,7 @@ You will be evaluated on:
 
 ## 👥 Teams or Solo
 
-You may work independently or in teams of up to 3 people.
+You may work independently or in teams of 2 people.
 
 ---
 
