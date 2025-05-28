@@ -1,3 +1,4 @@
+# 🧠 CUDA-to-HIP PyTorch Training & Competition
 
 Welcome to the **CUDA-to-HIP PyTorch Developer Challenge** — a hands-on learning and performance competition designed to teach you how to write custom GPU kernels in CUDA and HIP and use them in PyTorch applications. You’ll start from a fully working matrix multiply package and optimize it for **AMD GPUs using ROCm**.
 
